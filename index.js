@@ -33,7 +33,9 @@ function exactMatchToList(drivers,key) {
 //  console.log(theKey);
 
   let matchyBois = drivers.filter(function(matches) {
-    return matches[theKey] === key[theKey];
+    if ( matches[theKey] === key[theKey]) {
+      return matches[theKey];
+    }
   });
   return matchyBois;
 }
