@@ -10,8 +10,8 @@ function driverNamesWithRevenueOver(drivers, amt) {
   let matchyBois = drivers.filter(function(matches) {
     return matches.revenue > amt;
   });
-  return matchyBois;
-  
+//  return matchyBois;
+
   let carl = maychyBois.map(function (drive) {
   named = drive.name;
   return named;
