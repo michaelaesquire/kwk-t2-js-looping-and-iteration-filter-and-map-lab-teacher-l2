@@ -20,10 +20,10 @@ function driverNamesWithRevenueOver(drivers, amt) {
 
 function exactMatch(drivers, key) {
   let theKey = Object.keys(key);
-  console.log(theKey);
-  
+//  console.log(theKey);
+
   let matchyBois = drivers.filter(function(matches) {
-    return matches.name === key.name;
+    return matches[theKey] === key[theKey];
   });
   return matchyBois;
 }
