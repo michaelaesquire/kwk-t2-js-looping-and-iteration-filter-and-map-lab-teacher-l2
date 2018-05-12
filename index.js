@@ -19,5 +19,8 @@ function driverNamesWithRevenueOver(drivers, amt) {
 }
 
 function exactMatch(drivers, key) {
-
+  let matchyBois = drivers.filter(function(matches) {
+    return matches.revenue > amt;
+  });
+  return matchyBois;
 }
