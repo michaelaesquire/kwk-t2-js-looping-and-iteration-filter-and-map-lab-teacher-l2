@@ -5,3 +5,10 @@ function driversWithRevenueOver(drivers, amt) {
   });
   return matchyBois;
 }
+
+function driverNamesWithRevenueOver(drivers, amt) {
+  let matchyBois = drivers.filter(function(matches) {
+    return matches.revenue > amt;
+  });
+  return matchyBois;
+}
