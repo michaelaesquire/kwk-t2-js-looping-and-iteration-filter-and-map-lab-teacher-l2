@@ -37,5 +37,10 @@ function exactMatchToList(drivers,key) {
       return matches[theKey];
     }
   });
-  return matchyBois;
+//  return matchyBois;
+  let namesOnly = matchyBois.map(function (drive) {
+    named = drive.name;
+    return named;
+  });
+  return namesOnly;
 }
